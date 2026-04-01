@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WBNC Result Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    WEST BENGAL NURSING COUNCIL<br>
+    3rd Semester Examination Result
+</div>
+
+<div class="container" id="loginBox">
+    <h3>Check Your Result</h3>
+    <input type="text" placeholder="Registration Number">
+    <input type="password" placeholder="Password">
+    <button onclick="showResult()">Check Result</button>
+</div>
+
+<div class="container" id="resultBox" style="display:none;">
+    <h3>Score Card</h3>
+
+    <table>
+        <tr>
+            <td>Applied Biochemistry and Applied Nutrition & Dietetics</td>
+            <td>25</td>
+            <td class="fail">F</td>
+        </tr>
+        <tr>
+            <td>Nursing Foundation (I & II) - Theory</td>
+            <td>75</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Health/Nursing Informatics & Technology, Nursing Foundation (I & II) - Practical</td>
+            <td>70</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <p class="fail">
+    You are failed in the subject: Applied Biochemistry and Applied Nutrition & Dietetics
+    </p>
+
+    <div class="more" onclick="revealPrank()">More Info</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
